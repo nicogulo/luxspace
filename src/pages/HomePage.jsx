@@ -5,6 +5,7 @@ import JustArrived from 'parts/HomePage/JustArrived';
 import BrowseRoom from 'parts/HomePage/BrowseRoom';
 import Clients from 'parts/Clients';
 import SiteMap from 'parts/SiteMap';
+import Footer from 'parts/Footer';
 
 export default function HomePage(props) {
   return (
@@ -15,6 +16,7 @@ export default function HomePage(props) {
       <JustArrived />
       <Clients />
       <SiteMap />
+      <Footer />
     </>
   );
 }
