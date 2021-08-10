@@ -2,13 +2,14 @@ import React from 'react';
 import Header from 'parts/Header';
 import Breadcrumb from 'components/Breadcrumb';
 
-import ProductDetails from 'parts/Details/ProductDetails';
+import ShippingDetails from 'parts/Cart/ShippingDetails';
+import ShoppingCart from 'parts/Cart/ShoppingCart';
 import Suggestion from 'parts/Details/Suggestion';
 
 import SiteMap from 'parts/SiteMap';
 import Footer from 'parts/Footer';
 
-export default function Details() {
+export default function Cart() {
   return (
     <>
       <Header theme="black" />
@@ -19,16 +20,19 @@ export default function Details() {
             name: 'Home',
           },
           {
-            url: '/categories/22311',
-            name: 'Office Room',
-          },
-          {
-            url: '/categories/22311/product/8121',
-            name: 'Details',
+            url: '/cart',
+            name: 'Shopping Cart',
           },
         ]}
       />
-      <ProductDetails />
+      <section class="md:py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex -mx-4 flex-wrap">
+            <ShoppingCart />
+            <ShippingDetails />
+          </div>
+        </div>
+      </section>
       <Suggestion />
 
       <SiteMap />
