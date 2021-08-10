@@ -2,9 +2,9 @@ import React from 'react';
 import Header from 'parts/Header';
 import Breadcrumb from 'components/Breadcrumb';
 
-// import JustArrived from 'parts/HomePage/JustArrived';
-// import BrowseRoom from 'parts/HomePage/BrowseRoom';
-import Clients from 'parts/Clients';
+import ProductDetails from 'parts/Details/ProductDetails';
+import Suggestion from 'parts/Details/Suggestion';
+// import Clients from 'parts/Clients';
 import SiteMap from 'parts/SiteMap';
 import Footer from 'parts/Footer';
 
@@ -28,7 +28,9 @@ export default function Details() {
           },
         ]}
       />
-      <Clients />
+      <ProductDetails />
+      <Suggestion />
+      {/* <Clients /> */}
       <SiteMap />
       <Footer />
     </>
