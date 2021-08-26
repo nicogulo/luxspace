@@ -6,7 +6,7 @@ export default function PageErrorMessage({
   body = 'Looks like this page not found',
 }) {
   return (
-    <section className="align-middle">
+    <section className="mt-20">
       <div className="container mx-auto min-h-screen">
         <div className="flex flex-col items-center justify-center">
           <div className="w-full md:w-4/12 text-center">
