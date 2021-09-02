@@ -1,5 +1,5 @@
 import { useLayoutEffect } from 'react';
-import { addClass, removeClass } from 'helpers/format/classNameModifier';
+import { addClass } from 'helpers/format/classNameModifier';
 export default function useModalDOM() {
   useLayoutEffect(() => {
     const openModal = (e) => {
