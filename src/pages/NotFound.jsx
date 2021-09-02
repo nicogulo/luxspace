@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from 'parts/Header';
-import Breadcrumb from 'components/Breadcrumb';
+// import Breadcrumb from 'components/Breadcrumb';
 
 import SiteMap from 'parts/SiteMap';
 import PageErrorMessage from 'parts/PageErrorMessage';
