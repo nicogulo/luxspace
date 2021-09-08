@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 export default function Header({ theme, position }) {
   return (
     <div>
-      <header class={[position, 'w-full z-30 px-4'].join(' ')}>
-        <div class="container mx-auto py-5">
-          <div class="flex flex-stretch items-center">
-            <div class="w-56 items-center flex">
+      <header className={[position, 'w-full z-30 px-4'].join(' ')}>
+        <div className="container mx-auto py-5">
+          <div className="flex flex-stretch items-center">
+            <div className="w-56 items-center flex">
               <Link to="/">
                 <img
                   src="/images/content/logo.png"
@@ -15,16 +15,16 @@ export default function Header({ theme, position }) {
                 />
               </Link>
             </div>
-            <div class="w-full"></div>
-            <div class="w-auto">
+            <div className="w-full"></div>
+            <div className="w-auto">
               <ul
-                class="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex md:items-center"
+                className="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex md:items-center"
                 id="menu"
               >
-                <li class="mx-3 py-6 md:py-0">
+                <li className="mx-3 py-6 md:py-0">
                   <Link
                     to="/showcase"
-                    class={[
+                    className={[
                       ' hover:underline',
                       theme === 'white'
                         ? 'text-black md:text-white'
@@ -34,10 +34,10 @@ export default function Header({ theme, position }) {
                     Showcase
                   </Link>
                 </li>
-                <li class="mx-3 py-6 md:py-0">
+                <li className="mx-3 py-6 md:py-0">
                   <Link
                     to="/catalog"
-                    class={[
+                    className={[
                       ' hover:underline',
                       theme === 'white'
                         ? 'text-black md:text-white'
@@ -47,10 +47,10 @@ export default function Header({ theme, position }) {
                     Catalog
                   </Link>
                 </li>
-                <li class="mx-3 py-6 md:py-0">
+                <li className="mx-3 py-6 md:py-0">
                   <Link
                     to="/delivery"
-                    class={[
+                    className={[
                       ' hover:underline',
                       theme === 'white'
                         ? 'text-black md:text-white'
@@ -60,10 +60,10 @@ export default function Header({ theme, position }) {
                     Delivery
                   </Link>
                 </li>
-                <li class="mx-3 py-6 md:py-0">
+                <li className="mx-3 py-6 md:py-0">
                   <Link
                     to="/rewards"
-                    class={[
+                    className={[
                       ' hover:underline',
                       theme === 'white'
                         ? 'text-black md:text-white'
@@ -75,15 +75,15 @@ export default function Header({ theme, position }) {
                 </li>
               </ul>
             </div>
-            <div class="w-auto">
-              <ul class="items-center flex">
-                <li class="ml-6 block md:hidden">
+            <div className="w-auto">
+              <ul className="items-center flex">
+                <li className="ml-6 block md:hidden">
                   <button
                     id="menu-toggler"
-                    class="relative flex z-50 items-center justify-center w-8 h-8 text-black md:text-white focus:outline-none"
+                    className="relative flex z-50 items-center justify-center w-8 h-8 text-black md:text-white focus:outline-none"
                   >
                     <svg
-                      class="fill-current"
+                      className="fill-current"
                       width="18"
                       height="17"
                       viewBox="0 0 18 17"
@@ -94,9 +94,9 @@ export default function Header({ theme, position }) {
                     </svg>
                   </button>
                 </li>
-                <li class="ml-6">
+                <li className="ml-6">
                   <Link
-                    class={[
+                    className={[
                       'flex items-center justify-center w-8 h-8 ',
                       theme === 'white'
                         ? 'text-black md:text-white'
@@ -105,7 +105,7 @@ export default function Header({ theme, position }) {
                     to="/cart"
                   >
                     <svg
-                      class="fill-current"
+                      className="fill-current"
                       width="26"
                       height="24"
                       viewBox="0 0 26 24"
