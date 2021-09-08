@@ -1,4 +1,4 @@
-import 'assets/css/app.css';
+import './assets/css/app.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import HomePage from 'pages/HomePage';
